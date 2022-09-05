@@ -1,0 +1,5 @@
+stage/
+b2
+bin.v2/
+project-config.jam
+tools/build/src/engine/b2
