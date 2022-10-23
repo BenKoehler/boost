@@ -18,7 +18,6 @@ variant=release \
 threading=multi \
 cxxflags="-fPIC -std=c++17 -O3" \
 link=shared \
-runtime-link=static \
 -sZLIB_INCLUDE=../zlib/include \
 -sZLIB_LIBPATH=../zlib/lib \
 install
