@@ -1,6 +1,6 @@
 # Boost version 1_80_0
+set(BK_BOOST_VERSION "1.80.0")
 function(link_boost target MOD)
-    set(BK_BOOST_VERSION "1.80.0")
     target_link_libraries(${target} ${MOD} "${PROJECT_SOURCE_DIR}/thirdparty/boost/lib/libboost_atomic.so.${BK_BOOST_VERSION}")
     target_link_libraries(${target} ${MOD} "${PROJECT_SOURCE_DIR}/thirdparty/boost/lib/libboost_chrono.so.${BK_BOOST_VERSION}")
     target_link_libraries(${target} ${MOD} "${PROJECT_SOURCE_DIR}/thirdparty/boost/lib/libboost_container.so.${BK_BOOST_VERSION}")
@@ -41,5 +41,4 @@ function(link_boost target MOD)
     target_link_libraries(${target} ${MOD} "${PROJECT_SOURCE_DIR}/thirdparty/boost/lib/libboost_wave.so.${BK_BOOST_VERSION}")
     target_link_libraries(${target} ${MOD} "${PROJECT_SOURCE_DIR}/thirdparty/boost/lib/libboost_wserialization.so.${BK_BOOST_VERSION}")
     target_include_directories(${target} SYSTEM ${MOD} "${PROJECT_SOURCE_DIR}/thirdparty/boost/include")
-    unset(BK_BOOST_VERSION)
 endfunction()
